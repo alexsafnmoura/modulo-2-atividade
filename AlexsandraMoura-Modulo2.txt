@@ -1,0 +1,3 @@
+Aluna: Alexsandra Moura
+Curso: Programa de Mentoria GitHub 4 Women
+Aula 2: Trabalhando com Repositórios do GitHubd
