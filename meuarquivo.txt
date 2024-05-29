@@ -1,0 +1,100 @@
+# Utilizando Git Bash para Enviar Alterações no Repositório Local
+
+Este guia fornece instruções detalhadas sobre como usar o Git Bash para enviar alterações feitas no repositório local para o GitHub. 
+
+## Índice
+
+1. [Pré-requisitos](#pré-requisitos)
+2. [Configurando o Git Bash](#configurando-o-git-bash)
+3. [Clonando um Repositório](#clonando-um-repositório)
+4. [Fazendo Alterações no Repositório](#fazendo-alterações-no-repositório)
+5. [Enviando Alterações para o GitHub](#enviando-alterações-para-o-github)
+6. [Conclusão](#conclusão)
+
+## Pré-requisitos
+
+Antes de começar, você precisará:
+
+- Uma conta no [GitHub](https://github.com/)
+- Git Bash instalado no seu computador. Você pode baixá-lo [aqui](https://git-scm.com/).
+
+## Configurando o Git Bash
+
+1. Abra o Git Bash.
+2. Configure seu nome de usuário e email (substitua `Seu Nome` e `seuemail@example.com` pelos seus dados):
+
+    ```bash
+    git config --global user.name "Seu Nome"
+    git config --global user.email "seuemail@example.com"
+    ```
+
+## Clonando um Repositório
+
+Para clonar um repositório para o seu computador:
+
+1. Vá até a página do repositório no GitHub.
+2. Clique no botão `Code` e copie a URL do repositório.
+3. No Git Bash, navegue até o diretório onde você deseja clonar o repositório:
+
+    ```bash
+    cd /caminho/para/o/diretorio
+    ```
+
+4. Clone o repositório:
+
+    ```bash
+    git clone [URL_DO_REPOSITÓRIO]
+    ```
+
+    Substitua `[URL_DO_REPOSITÓRIO]` pela URL que você copiou.
+
+## Fazendo Alterações no Repositório
+
+1. Navegue até a pasta do repositório clonado:
+
+    ```bash
+    cd [NOME_DO_REPOSITÓRIO]
+    ```
+
+2. Faça as alterações necessárias nos arquivos.
+3. Adicione as alterações ao stage:
+
+    ```bash
+    git add .
+    ```
+
+4. Faça um commit das alterações:
+
+    ```bash
+    git commit -m "Descrição das alterações"
+    ```
+
+## Enviando Alterações para o GitHub
+
+Para enviar (push) as alterações feitas no repositório local para o GitHub:
+
+1. Certifique-se de que você está na branch correta:
+
+    ```bash
+    git branch
+    ```
+
+    Você pode mudar para a branch correta com:
+
+    ```bash
+    git checkout [nome-da-branch]
+    ```
+
+2. Envie as alterações para o GitHub:
+
+    ```bash
+    git push origin [nome-da-branch]
+    ```
+
+    Substitua `[nome-da-branch]` pelo nome da branch que você está utilizando, normalmente `main` ou `master`.
+
+## Conclusão
+
+Agora você sabe como usar o Git Bash para clonar um repositório, fazer alterações e enviar essas alterações para o GitHub. Para mais informações e comandos avançados, consulte a [documentação oficial do Git](https://git-scm.com/doc).
+
+---
